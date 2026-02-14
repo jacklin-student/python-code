@@ -1,0 +1,23 @@
+class algebra:
+    def a_add_b(a,b):
+        lhs=(a+b)**2
+        rhs= (a**2) + (2*a*b) + (b**2)
+        if lhs == rhs:
+            print("verified:", lhs , "=" , rhs)
+        else:
+            print('not equal ' + lhs + "=/=" + rhs)
+
+    def a_sub_b(a,b):
+        lhs=(a-b)**2
+        rhs= (a**2) - (2*a*b) + (b**2)
+        if lhs == rhs:
+            print("verified:", lhs , "=" , rhs)
+        else:
+            print('not equal ' + lhs + "=/=" + rhs)
+
+print('========================')
+num1=int(input('give the a value :'))
+num2=int(input('give the b value :'))
+print('========================')
+algebra.a_add_b(num1,num2)
+algebra.a_sub_b(num1,num2)
